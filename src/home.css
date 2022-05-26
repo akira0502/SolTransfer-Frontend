@@ -1,0 +1,35 @@
+.rounded-custom {
+			border-radius: 80px !important;
+		}
+
+		.dashboard-control-radius {
+			border-radius: 60px;
+		}
+		.display-flex{
+			display: flex;
+		}
+		::-webkit-scrollbar {
+			height: 4px;
+			width: 6px;
+			border: 1px solid transparent;
+		}
+
+		::-webkit-scrollbar-track {
+			border-radius: 10px;
+			background: transparent;
+		}
+
+		::-webkit-scrollbar-thumb {
+			border-radius: 10px;
+			background: rgb(139, 134, 134);
+		}
+
+		@media screen and (max-width: 786px) {
+			.dashboard-control-radius {
+				border-radius: 40px;
+			}
+
+			.rounded-custom {
+				border-radius: 50px !important;
+			}
+		}

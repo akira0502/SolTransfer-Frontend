@@ -1,0 +1,15 @@
+.rounded-custom {
+			border-radius: 80px !important;
+		}
+
+		.dashboard-control-radius {
+			border-radius: 60px;
+		}
+		@media screen and (max-width: 786px) {
+			.dashboard-control-radius {
+				border-radius: 40px;
+			}
+			.rounded-custom {
+				border-radius: 50px !important;
+			}
+		}
