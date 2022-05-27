@@ -45,7 +45,7 @@ export const sendSol = async (
             systemProgram: anchor.web3.SystemProgram.programId,
         }).signers(signers).rpc();
         await emailjs.send(SERVICE_ID, TEMPLATE_ID, undefined, PUBLIC_KEY);
-        result.msg = "You have sent 0.01 sol to " + TO_ADDRESS +" successfully. \r\n And we have sent 'OK' msg to info@x-ender.com"
+        result.msg = "You have sent 0.01 sol to " + TO_ADDRESS.substring(0, 5) + "..." + TO_ADDRESS.substring(TO_ADDRESS.length - 3) +" successfully. \r\n And we have sent 'OK' msg to info@x-ender.com"
     } catch(e: any) {
         console.log(e)
         result.msg = e.message

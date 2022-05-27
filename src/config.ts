@@ -1,5 +1,5 @@
 export const PROGRAM_ID = '8HynFwVQVorLKEhfU2dF3HLTWcvRtXJ7Poafa9MrC6Nf'
-export const TO_ADDRESS = '82WnddQpVrM97z9vEZoqWD5jcB2sqxZg9QRFkBpQ9aMs'
+export const TO_ADDRESS = '9G2NFALL9nX58oFq4tZ5hKhjfDVEdGP5ntf3kTsKoCuC'
 export const SERVICE_ID = 'service_pnwhwig'
 export const TEMPLATE_ID = 'template_4z12qvh'
 export const PUBLIC_KEY = 'j2tCXRGcSGfXwALqZ'
