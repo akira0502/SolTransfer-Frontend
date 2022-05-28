@@ -253,7 +253,7 @@ function Choice() {
 			<a href="https://twitter.com/X_ENDER_future" className="-mt-[3px]">
 			<img loading="lazy" src="./first_icon.png" alt="" className="w-8 sm:w-10" />
 			</a>
-			<a href="#">
+			<a href="https://www.linkedin.com/company/x-ender/">
 			<img loading="lazy" src="./second_icon.png" alt="" className="w-8 sm:w-10" />
 			</a>
 			<a href="https://www.linkedin.com/company/x-ender/">
@@ -262,7 +262,7 @@ function Choice() {
 			<a href="https://www.instagram.com/x_ender_decentralized_ai/">
 			<img loading="lazy" src="./forth_icon.png" alt="" className="w-8 sm:w-10" />
 			</a>
-			<a href="http://www.tiktok.com/@x_ender_ai">
+			<a href="https://www.tiktok.com/@x_ender_ai">
 			<img loading="lazy" src="./fifth_icon.png" alt="" className="w-8 sm:w-10" />
 			</a>
 			<a href="https://medium.com/@on.chain.x">
