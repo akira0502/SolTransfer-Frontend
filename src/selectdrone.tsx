@@ -1,11 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './selectdrone.css'
 import { initProgram, sendSol } from './integration';
 import {useAuth} from './useWalletContext'
 
 function Selectdrone() {
 	const { value, setValue} = useAuth();
+	const navigate = useNavigate();
 	const selectModalTrigger = (index: any) => {
 		(document as any).getElementById(`modal${index}`).classList.toggle('display-block')
 	}
@@ -17,12 +18,11 @@ function Selectdrone() {
 		(document as any).getElementById('modalthankyou').classList.toggle('display-flex')
 	}
 	const handleClick = async () => {
-		console.log("hello")
 		if(value) {
 			initProgram(value.wallet)
 			const result = await sendSol();
 			if(result.success) {
-
+				navigate('/dashboard', { replace: true });
 			}
 			alert(result.msg);
 		} else {
@@ -489,8 +489,8 @@ function Selectdrone() {
 
 
 			<div className=" rounded-custom px-1 sm:px-6 py-1 sm:py-6">
-				<h1 classNa-me="text-[#23bdcd] sm:text-4xl md:pt-2 pb-4 sm:pb-8 text-xl px-2 sm:px-0 text-center mt-3">
-					Select &nbsp; your &nbsp; Drone
+				<h1 className="text-[#23bdcd] text-center text-3xl md:text-4xl">
+					Select   your   Drone
 				</h1>
 				<div className="sm:grid sm:grid-cols-2 gap-5">
 					<div className="bg-[#27262c] rounded-3xl pt-4 pb-5 px-3 mb-2 sm:mb-0">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './dashboard.css'
 import { initProgram, sendSol } from './integration';
 import {useAuth} from './useWalletContext'
@@ -7,6 +7,7 @@ import {useAuth} from './useWalletContext'
 function Dashboard() {
 
   const { value, setValue} = useAuth();
+const navigate = useNavigate();
   const toogleFirstSwitch = (action: any) => {
 			if (action == 'on') {
 				(document as any).getElementById('true').style.display = 'none';
@@ -50,6 +51,7 @@ function Dashboard() {
 			alert(result.msg);
 		} else {
 			alert("please connect wallet");
+			navigate('/', { replace: true });
 		}
 	}
   return (

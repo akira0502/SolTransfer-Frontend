@@ -29,12 +29,12 @@ function Choice() {
 	<div className="bg-[#393257]">
 		<div className="max-w-4xl pb-20 mx-auto pt-4 md:pt-0 px-3 md:px-6">
 			<div className="md:flex md:justify-between md:items-center py-6 px-10">
-				<a href="/dashboard">
+				<Link to="/dashboard">
 					<button
 						className="rounded-xl mb-4 md:mb-0 md:rounded-3xl text-3xl md:h-24 bg-[#8447ff] py-4 md:py-0 flex items-center justify-center w-full md:w-52 text-white hover:opacity-90">
 						Manage
 					</button>
-				</a>
+				</Link>
 				<Link className="hidden md:block" to="/selectdrone">
 					<button
 						className="rounded-3xl text-4xl h-32 bg-[#8447ff] flex items-center justify-center w-56 text-white hover:opacity-90">
