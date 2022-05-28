@@ -689,7 +689,7 @@ function Selectdrone() {
 				<a href="#">
 					<img loading="lazy" src="./second_icon.png" alt="" className="w-8 sm:w-10" />
 				</a>
-				<a href="www.linkedin.com/company/x-ender/">
+				<a href="https://www.linkedin.com/company/x-ender/">
 					<img loading="lazy" src="./third_icon.png" alt="" className="w-8 sm:w-10" />
 				</a>
 				<a href="https://www.instagram.com/x_ender_decentralized_ai/">
