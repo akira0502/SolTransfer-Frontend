@@ -27,6 +27,7 @@ function Selectdrone() {
 			alert(result.msg);
 		} else {
 			alert("please connect wallet");
+			navigate('/', { replace: true });
 		}
 	}
   return (
